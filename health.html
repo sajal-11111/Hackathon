@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthConnect - Personalized Healthcare Guidance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="health.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i> HealthConnect
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to HealthConnect</h1>
+            <p>Your personal healthcare assistant for immediate guidance and support.</p>
+            <a href="#services" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Health Assessment</h3>
+                    <p>Get instant first aid advice and recommendations based on your symptoms.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Facility Locator</h3>
+                    <p>Find nearby hospitals and clinics with real-time availability information.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Emergency Booking</h3>
+                    <p>Book ambulances, hospital beds, and other facilities in urgent situations.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health Monitoring</h3>
+                    <p>Track your vital signs and receive personalized health tips.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="health-assessment">
+            <h2>Health Issue Assessment</h2>
+            <form id="health-form">
+                <textarea id="health-description" rows="4" placeholder="Describe your health issue here..."></textarea>
+                <button type="submit">Get Recommendations</button>
+            </form>
+            <div id="recommendations">
+                <h3>Recommendations</h3>
+                <div id="first-aid"></div>
+                <div id="lifestyle-changes"></div>
+            </div>
+        </section>
+
+        <section id="facility-finder">
+            <h2>Find Nearby Healthcare Facilities</h2>
+            <div id="map"></div>
+            <button id="find-facilities">Find Nearby Facilities</button>
+            <div id="facility-list"></div>
+        </section>
+
+        <section id="real-time-info">
+            <h2>Real-Time Hospital Information</h2>
+            <div id="hospital-info"></div>
+        </section>
+
+        <section id="emergency-booking">
+            <h2>Emergency Booking</h2>
+            <form id="booking-form">
+                <select id="booking-type">
+                    <option value="ambulance">Ambulance</option>
+                    <option value="bed">Hospital Bed</option>
+                    <option value="facilities">Other Facilities</option>
+                </select>
+                <input type="text" id="booking-details" placeholder="Additional details">
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>About HealthConnect</h2>
+            <p>HealthConnect is a cutting-edge platform designed to provide immediate healthcare guidance and support. Our mission is to make quality healthcare information and services accessible to everyone, anytime, anywhere.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HealthConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="health.js"></script>
+</body>
+</html>
